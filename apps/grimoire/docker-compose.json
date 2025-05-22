@@ -3,8 +3,8 @@
   "services": [
     {
       "id": "grimoire",
-      "container_name": "grimoire",
       "image": "goniszewski/grimoire:0.5.0",
+      "container_name": "grimoire",
       "restart": "unless-stopped",
       "environment": {
         "PORT": "2007",
