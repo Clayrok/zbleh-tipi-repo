@@ -1,7 +1,8 @@
 {
   "version": "3.9",
-  "services": {
-    "grimoire": {
+  "services": [
+    {
+      "name": "grimoire",
       "image": "goniszewski/grimoire:0.5.0",
       "container_name": "grimoire",
       "restart": "unless-stopped",
@@ -30,7 +31,7 @@
         "retries": 3
       }
     }
-  },
+  ],
   "volumes": {
     "grimoire_data": {}
   }
