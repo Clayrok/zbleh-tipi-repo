@@ -1,0 +1,14 @@
+{
+  "id": "grimoire",
+  "name": "Grimoire",
+  "version": "0.5.0",
+  "tipi_version": 1,
+  "port": 2007,
+  "available": true,
+  "categories": ["utilities"],
+  "short_desc": "A self-hosted bookmark manager for the modern wizard.",
+  "description": "Grimoire is a privacy-focused, self-hosted bookmark manager that supports tags, rich metadata, full-text search, and a sleek UI.",
+  "author": "goniszewski",
+  "source": "https://github.com/goniszewski/grimoire",
+  "form_fields": []
+}
