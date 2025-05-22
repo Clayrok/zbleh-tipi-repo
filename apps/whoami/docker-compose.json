@@ -1,8 +1,8 @@
 {
-  "version": "3.8",
-  "services": {
-    "app": {
+  "services": [
+    {
+      "name": "app",
       "image": "nginx"
     }
-  }
+  ]
 }
