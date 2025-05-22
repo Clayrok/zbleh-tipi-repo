@@ -1,26 +1,18 @@
 {
-  "version": "3.9",
-  "services": {
-    "grimoire": {
+  "services": [
+    {
+      "name": "grimoire",
       "image": "goniszewski/grimoire:0.5.0",
-      "container_name": "grimoire",
-      "restart": "unless-stopped",
       "environment": {
         "PORT": "2007",
         "PUBLIC_HTTPS_ONLY": "false",
         "PUBLIC_SIGNUP_DISABLED": "false"
       },
+      "internalPort": 5173,
       "volumes": [
         {
-          "type": "volume",
-          "source": "grimoire_data",
-          "target": "/app/data/"
-        }
-      ],
-      "ports": [
-        {
-          "published": 2007,
-          "target": 5173
+          "hostPath": "${APP_DATA_DIR}",
+          "containerPath": "/app/data/"
         }
       ],
       "healthcheck": {
@@ -37,8 +29,5 @@
         "retries": 3
       }
     }
-  },
-  "volumes": {
-    "grimoire_data": {}
-  }
+  ]
 }
