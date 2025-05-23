@@ -10,5 +10,34 @@
   "description": "Grimoire is a privacy-focused, self-hosted bookmark manager that supports tags, rich metadata, full-text search, and a sleek UI.",
   "author": "goniszewski",
   "source": "https://github.com/goniszewski/grimoire",
-  "form_fields": []
+  "form_fields": [],
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Internal IP",
+      "required": true,
+      "min": 1,
+      "max": 100,
+      "hint": "ip",
+      "env_variable": "INTERNAL_IP"
+    },
+    {
+      "type": "text",
+      "label": "App Domain",
+      "required": true,
+      "min": 1,
+      "max": 100,
+      "hint": "ip:port",
+      "env_variable": "APP_DOMAIN"
+    },
+    {
+      "type": "text",
+      "label": "App Host",
+      "required": true,
+      "min": 1,
+      "max": 100,
+      "hint": "ip",
+      "env_variable": "APP_HOST"
+    }
+  ]
 }
