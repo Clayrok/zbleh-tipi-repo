@@ -8,6 +8,9 @@
         "PUBLIC_HTTPS_ONLY": "false",
         "PUBLIC_SIGNUP_DISABLED": "false"
       },
+      "ports": [
+        "2007:5173"
+      ],
       "internalPort": 5173,
       "volumes": [
         {
