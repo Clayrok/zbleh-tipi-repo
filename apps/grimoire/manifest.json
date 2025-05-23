@@ -1,0 +1,6 @@
+{
+  "id": "zbleh:grimoire",
+  "name": "Grimoire",
+  "type": "app",
+  "requireAuthentication": false
+}

@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "grimoire",
-      "image": "goniszewski/grimoire:0.5.0",
+      "image": "goniszewski/grimoire:latest",
       "environment": {
         "PORT": "2007",
         "PUBLIC_HTTPS_ONLY": "false",
